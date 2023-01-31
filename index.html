@@ -20,13 +20,19 @@
     </head>
 
     <body>
-        <div class="">
+        <h1>My first webpage</h1>
+        <p>Here is my first visualization</p>
+        <div id="myFirstChart">
             <!--Fill in with stuff-->
         </div>
     </body>
 
     <script>
-        //Define chars 
+        // now in javascript, declaring javascript var
+        var mychartcode = "mychart.json" 
+        //function, 2 args, 1st location, 2nd what to put there
+        vegaEmbed('#myFirstChart',mychartcode)
+        //runs vegaEmbed, uses id to find(always use hashtag), puts 2nd arg 
     </script>
 
     </html>
